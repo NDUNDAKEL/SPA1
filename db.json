@@ -1,0 +1,69 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doea",
+      "phone": "011036793322"
+    },
+    {
+      "id": "74ad",
+      "name": "James",
+      "phone": "01102323"
+    },
+    {
+      "id": "944e",
+      "name": "Kelvin",
+      "phone": "1223"
+    },
+    {
+      "id": "71e9",
+      "name": "Kelvin",
+      "phone": "3333"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhoneee",
+      "price": 999,
+      "quantity": 7,
+      "phone": "10w"
+    },
+    {
+      "id": "2",
+      "name": "Laptopw",
+      "price": 1299,
+      "quantity": 4,
+      "phone": "5"
+    },
+    {
+      "id": "f719",
+      "name": "Machungwa",
+      "phone": "2",
+      "quantity": 4
+    },
+    {
+      "id": "9a51",
+      "name": "Machungwa",
+      "phone": "22",
+      "quantity": "11"
+    },
+    {
+      "id": "cf2e",
+      "name": "Mango",
+      "quantity": "122"
+    },
+    {
+      "id": "2e6e",
+      "name": "Mango",
+      "quantity": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "name": "iPhoneee",
+      "quantity": 2
+    }
+  ]
+}

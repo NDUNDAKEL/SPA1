@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA with JSON Server</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between bg-orange-300 h-20 px-5 shadow-md">
+        <!-- Logo & Title -->
+        <div class="flex items-center">
+            <img src="../assets/logo.png" class="h-14 w-14 rounded-full"/>
+            <h1 class="text-lg font-bold text-white ml-2">KELIFE Shopping Admin Panel </h1>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs space-x-3 p-4">
+          
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md" onclick="loadUsers()">Users</button>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md" onclick="loadProducts()">Products</button>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md" onclick="loadOrders()">Orders</button>
+      </div>
+      
+    </nav>
+    <h2 class="text-center text-2xl text-red-500">Data records</h2>
+    <!-- Content Area -->
+
+     <main class="mx-[15%] bg-purple-500 mb-20" id="usersMain"> 
+     <h2 class="text-center text-white text-2xl">Users List</h2>
+    <div class="flex-col w-full justify-center">
+      <div  class="flex m-3">
+    <input  type="text" id="editFieldName" placeholder="Edit user name" class="w-1/2 mt-4 bg-white border border-gray-600 p-2"/>
+    </div>
+  <div  class="flex m-3">
+    <input  type="text" id="editFieldPhone" placeholder="User Phone" class="w-1/2 mt-4 bg-white border border-gray-600 p-2"/>
+    <button id="editBtn" type="button"  class="bg-orange-400 p-2 rounded-md mt-4 text-white">Edit</button>
+ 
+     </div>
+  </div>
+    
+  <div id="users" class="grid grid-cols-3 gap-3 space-x-3  p-3 rounded-md  ">
+
+    
+  </div>
+  <form>
+      <input type="text" class="m-5 border border-gray-600 p-2 mr-3 " placeholder="enter user name" id="Uname"/>
+  <input type="text" class="border border-gray-600 p-2 mr-3 " placeholder="enter user phone" id="Uphone"/>
+  <button id="addUser" type="button" class="bg-blue-600 text-white rounded-md p-2">Add User</button> 
+  
+  </form>
+
+  
+</main>
+
+
+
+<main class="mx-[15%] mb-20" id="productsMain" style="background-color: yellowgreen;"> 
+  <h2 class="text-center text-white text-2xl">Products List</h2>
+ <div class="flex-col w-full justify-center">
+   <div  class="flex m-3">
+
+       <input  type="text" id="editProductName" placeholder="Edit product name" class="w-1/2 mt-4 bg-white border border-gray-600 p-2"/>
+ </div>
+<div  class="flex m-3">
+ <input  type="text" id="editProductQuantity" placeholder="Product Quantity" class="w-1/2 mt-4 bg-white border border-gray-600 p-2"/>
+ <button id="editProducts" type="submit"  class="bg-orange-400 p-2 rounded-md mt-4 text-white">Edit</button>
+
+
+  </div>
+</div>
+ 
+<div id="products" class="grid grid-cols-3 gap-3 space-x-3  p-3 rounded-md  ">
+
+ 
+</div>
+<input type="text" class="m-5 border border-gray-600 p-2 mr-3 " placeholder="enter product name" id="Pname"/>
+<input type="text" class="border border-gray-600 p-2 mr-3 " placeholder="enter quantity" id="Uquantity"/>
+<button id="addProduct" type="button" class="bg-blue-600 text-white rounded-md p-2">Add Product</button> 
+
+
+</main>
+
+
+<main class="mx-[15%] mb-20" id="ordersMain" style="background-color: yellowgreen;"> 
+  <h2 class="text-center text-white text-2xl">Orders List</h2>
+
+ 
+<div id="orders" class="grid grid-cols-3 gap-3 space-x-3  p-3 rounded-md  ">
+
+ 
+</div>
+
+</main>
+
+
+    <script src="../script.js" defer></script>
+    <script src="../products.js" defer></script>
+    <script src="../Orders.js" defer></script>
+</body>
+</html>
