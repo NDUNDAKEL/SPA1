@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "json-server": "^0.17.4"
   }
 }
