@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // const API_URL = "https://dbjson-2.onrender.com";
-  const API_URL ='http://localhost:3000'
+  const API_URL = "https://dbjson-2.onrender.com";
+  // const API_URL ='http://localhost:3000'
   const productsMain=document.getElementById('productsMain')
   const orderMain=document.getElementById('ordersMain')
   orderMain.style.display='none'
