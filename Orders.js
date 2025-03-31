@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const API_URL = "https://dbjson-2.onrender.com";
+  const API_URL = "https://dbjson-2.onrender.com";
+    // const API_URL = "http://localhost:3000";
     const usersBoard = document.getElementById("usersMain");
     const ordersMain = document.getElementById("ordersMain");
     
@@ -41,7 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
       
               // Fetch the product details
               const productResponse = await fetch(`${API_URL}/products/${id}`);
-              if (!productResponse.ok) throw new Error("Product not found");
+              if (!productResponse.ok) {
+                await fetch(`${API_URL}/orders/${id}`,{
+                  method:"DELETE"
+                })
+                alert('Product was not found but order is deleted')
+            
+              } 
       
               const productData = await productResponse.json();
       

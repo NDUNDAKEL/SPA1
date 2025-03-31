@@ -19,16 +19,14 @@
       "id": "71e9",
       "name": "Kelvin",
       "phone": "3333"
+    },
+    {
+      "id": "a200",
+      "name": "sadsad",
+      "phone": "sasa"
     }
   ],
   "products": [
-    {
-      "id": "1",
-      "name": "iPhoneee",
-      "price": 999,
-      "quantity": 7,
-      "phone": "10w"
-    },
     {
       "id": "2",
       "name": "Laptopw",
@@ -46,24 +44,39 @@
       "id": "9a51",
       "name": "Machungwa",
       "phone": "22",
-      "quantity": "11"
+      "quantity": 11
     },
     {
       "id": "cf2e",
       "name": "Mango",
-      "quantity": "122"
+      "quantity": 122
     },
     {
       "id": "2e6e",
       "name": "Mango",
       "quantity": 1
+    },
+    {
+      "id": "5dce",
+      "name": "kel",
+      "quantity": "22"
+    },
+    {
+      "id": "0513",
+      "name": "asdasd",
+      "quantity": "1121"
     }
   ],
   "orders": [
     {
-      "id": "1",
-      "name": "iPhoneee",
-      "quantity": 2
+      "id": "bdde",
+      "name": "kel",
+      "quantity": "22"
+    },
+    {
+      "id": "8080",
+      "name": "asdasd",
+      "quantity": "1121"
     }
   ]
 }

@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const API_URL = "https://dbjson-2.onrender.com";
+  // const API_URL = "https://dbjson-2.onrender.com";
+  const API_URL ='http://localhost:3000'
   const productsMain=document.getElementById('productsMain')
+  const orderMain=document.getElementById('ordersMain')
+  orderMain.style.display='none'
   productsMain.style.display="none"
 
   const usersContainer=document.getElementById('users')
@@ -104,29 +107,32 @@ document.addEventListener("DOMContentLoaded", () => {
   }
  
 
-    const addBtn=document.getElementById('addUser')
-    addBtn.addEventListener('click', async ()=>{
-      const uname=document.getElementById('Uname').value
-      const uphone=document.getElementById('Uphone').value
-      if(uname.trim()!= "" && uphone.trim()!=""){
-
-      
-      const response=await fetch(`${API_URL}/users`,{
-        method:"POST",
-        headers:{
-          "Content-Type":"Application/Json"
-        },
-        body: JSON.stringify({name:uname, phone:uphone})
-      })
-      if(response.ok){
-        alert('User added Successfully')
-        usersContainer.innerHTML=""
-        fetchUsers()
-      }else{
-        alert('error adding user')
+    document.getElementById('usersForm').addEventListener('submit', async (event)=>{
+      event.preventDefault()
+    
+        const uname=document.getElementById('Uname').value
+        const uphone=document.getElementById('Uphone').value
+        if(uname.trim()!= "" && uphone.trim()!=""){
+  
+        
+        const response=await fetch(`${API_URL}/users`,{
+          method:"POST",
+          headers:{
+            "Content-Type":"Application/Json"
+          },
+          body: JSON.stringify({name:uname, phone:uphone})
+        })
+        if(response.ok){
+          alert('User added Successfully')
+          usersContainer.innerHTML=""
+          fetchUsers()
+        }else{
+          alert('error adding user')
+        }
       }
-    }
-    })
+      })
+
+
   
  
 async function fetchUsers(){
