@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPA with JSON Server</title>
-    <link href="/src/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body class="bg-gray-100">
 
@@ -46,9 +47,9 @@
     
   </div>
   <form id="usersForm">
-      <input type="text" class="m-5 border border-gray-600 p-2 mr-3 " placeholder="enter user name" id="Uname"/>
-  <input type="text" class="border border-gray-600 p-2 mr-3 " placeholder="enter user phone" id="Uphone"/>
-  <button id="addUser" type="submit" class="bg-blue-600 text-white rounded-md p-2">Add User</button> 
+      <input type="text" class="m-5 bg-white border border-black p-2 mr-3 " placeholder="enter user name" id="Uname"/>
+  <input type="text" class=" bg-white border border-black p-2 mr-3 " placeholder="enter user phone" id="Uphone"/>
+  <button id="addUser" type="submit" class="bg-green-600 text-white rounded-md p-2">Add User</button> 
   
   </form>
 
@@ -76,10 +77,10 @@
 
  
 </div>
-<form id="productsAddForm">
-  <input type="text" class="m-5 border border-gray-600 p-2 mr-3 " placeholder="enter product name" id="Pname"/>
-<input type="text" class="border border-gray-600 p-2 mr-3 " placeholder="enter quantity" id="Uquantity"/>
-<button id="addProduct" type="submit" class="bg-blue-600 text-white rounded-md p-2">Add Product</button> 
+<form id="productsAddForm" class="">
+  <input type="text" class="m-5  bg-white border border-black p-2 mr-3 " placeholder="enter product name" id="Pname"/>
+<input type="text" class=" bg-white border border-black p-2 mr-3 " placeholder="enter quantity" id="Uquantity"/>
+<button id="addProduct" type="submit" class="bg-green-600 text-white rounded-md p-2">Add Product</button> 
 </form>
 
 
